@@ -1,28 +1,47 @@
-﻿server:
+﻿# Configuration Owncast
+
+# Clés de stream (c'est ce que tu mets dans OBS)
+streamKeys:
+  - key: "symphorlive"
+    user: "admin"
+    comment: "Clé principale de diffusion"
+
+# Informations sur l’instance
+instanceDetails:
+  name: "Symphor HD TV"
+  title: "Chaîne indépendante en direct"
+  summary: "Bienvenue sur Symphor HD TV en direct 24/7."
+  logo:
+  tags: ["live", "tv", "indépendant"]
+
+# Paramètres vidéo
+videoSettings:
+  videoQualityVariants:
+    - name: "720p"
+      videoBitrate: 1500
+      audioBitrate: 128
+      scaledWidth: 1280
+      scaledHeight: 720
+      framerate: 30
+
+# Paramètres HTTP
+webServer:
   port: 8080
-  hostname: "symphorhdtv.onrender.com"
-  admin_username: "admin"
-  admin_password: "Bksymphor0085@"
-  allow_registration: false
-  public: true
+  publicHost: "shdtv.onrender.com"
 
-rtmp:
+# Utilisateur admin pour l’interface
+admin:
+  username: "admin"
+  password: "Bksymphor0085@"
+
+# Stockage des données
+storage:
   enabled: true
-  port: 1935
+  directory: "/app/data"
 
-streaming:
-  default_bitrate: 2500
-  max_bitrate: 5000
-  enable_recordings: false
+# Limite de connexion
+maxNumberOfViewers: 500
 
-chat:
-  enabled: true
-  moderation_enabled: false
-
-appearance:
-  theme: "dark"
-  custom_css: ""
-
+# Logs
 logging:
   level: "info"
-  log_to_file: false
