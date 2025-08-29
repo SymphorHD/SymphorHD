@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ﻿# Configuration Owncast
+=======
+# Configuration Owncast
+>>>>>>> d8db9369aca74d547486e08ea81426f4e6820b97
 
 # Clés de stream (c'est ce que tu mets dans OBS)
 streamKeys:
