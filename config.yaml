@@ -1,0 +1,28 @@
+﻿server:
+  port: 8080
+  hostname: "symphorhdtv.onrender.com"
+  admin_username: "admin"
+  admin_password: "Bksymphor0085@"
+  allow_registration: false
+  public: true
+
+rtmp:
+  enabled: true
+  port: 1935
+
+streaming:
+  default_bitrate: 2500
+  max_bitrate: 5000
+  enable_recordings: false
+
+chat:
+  enabled: true
+  moderation_enabled: false
+
+appearance:
+  theme: "dark"
+  custom_css: ""
+
+logging:
+  level: "info"
+  log_to_file: false
